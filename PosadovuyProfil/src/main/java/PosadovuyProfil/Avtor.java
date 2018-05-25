@@ -86,7 +86,7 @@ public class Avtor extends JFrame {
 		b_Yvijtu = new JButton("Увійти");
 		b_Yvijtu.setForeground(Color.BLACK);
 		b_Yvijtu.addActionListener(new ActionListener() {
-			
+
 			private String s_Login;
 			private String s_Password;
 
@@ -131,7 +131,6 @@ public class Avtor extends JFrame {
 					scanner_Avtoruzacia.close();
 
 					if (s_Password.equals(s_Avtoruzacia)) {
-						JOptionPane.showMessageDialog(null, "Вітаю, Ви в системі");
 
 						String s_Korustuvac = Reading_Name + " " + Reading_Prizvusko;
 
@@ -172,7 +171,8 @@ public class Avtor extends JFrame {
 
 		l_fon = new JLabel("");
 		l_fon.setForeground(new Color(0, 0, 205));
-//		l_fon.setIcon(new ImageIcon("C:\\Users\\ZakkZakk\\Desktop\\avtoruzacia (зменшена).jpg"));
+		// l_fon.setIcon(new ImageIcon("C:\\Users\\ZakkZakk\\Desktop\\avtoruzacia
+		// (зменшена).jpg"));
 		l_fon.setIcon(new ImageIcon("res/fon/avtoruzacia (зменшена).jpg"));
 		l_fon.setBounds(-1, 0, 995, 565);
 		getContentPane().add(l_fon);

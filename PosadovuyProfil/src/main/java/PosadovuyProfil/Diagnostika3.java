@@ -54,13 +54,13 @@ public class Diagnostika3 extends JFrame {
 
 		choice_16 = new Choice();
 		choice_16.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_16.setBounds(359, 97, 204, 31);
+		choice_16.setBounds(359, 97, 171, 24);
 		getContentPane().add(choice_16);
 		choice_16.add("Завжди снідаю");
 		choice_16.add("Іноді");
 		choice_16.add("Ніколи");
 
-		l_17 = new JLabel("Чи вживаєте Ви молочні продукти ?");
+		l_17 = new JLabel("Часто відчуваєте перевтому ?");
 		l_17.setForeground(new Color(255, 105, 180));
 		l_17.setHorizontalAlignment(SwingConstants.CENTER);
 		l_17.setFont(new Font("Times New Roman", Font.ITALIC, 21));
@@ -69,11 +69,11 @@ public class Diagnostika3 extends JFrame {
 
 		choice_17 = new Choice();
 		choice_17.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_17.setBounds(359, 146, 204, 31);
+		choice_17.setBounds(359, 146, 171, 24);
 		getContentPane().add(choice_17);
 		choice_17.add("Регулярно");
 		choice_17.add("Іноді");
-		choice_17.add("Ніколи не вживаю");
+		choice_17.add("Ніколи");
 
 		l_18 = new JLabel("Ваше харчування різноманітне ?");
 		l_18.setForeground(new Color(255, 105, 180));
@@ -84,9 +84,9 @@ public class Diagnostika3 extends JFrame {
 
 		choice_18 = new Choice();
 		choice_18.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_18.setBounds(359, 202, 204, 31);
+		choice_18.setBounds(359, 202, 171, 24);
 		getContentPane().add(choice_18);
-		choice_18.add("Постійно, мені це цікаво");
+		choice_18.add("Постійно");
 		choice_18.add("Якщо є час");
 		choice_18.add("Ніколи");
 
@@ -99,7 +99,7 @@ public class Diagnostika3 extends JFrame {
 
 		choice_19 = new Choice();
 		choice_19.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_19.setBounds(359, 263, 204, 31);
+		choice_19.setBounds(359, 263, 171, 24);
 		getContentPane().add(choice_19);
 		choice_19.add("Ніколи");
 		choice_19.add("Раз на 3 місяці");
@@ -115,7 +115,7 @@ public class Diagnostika3 extends JFrame {
 
 		choice_20 = new Choice();
 		choice_20.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_20.setBounds(359, 327, 204, 31);
+		choice_20.setBounds(359, 327, 171, 24);
 		getContentPane().add(choice_20);
 		choice_20.add("Дуже рідко");
 		choice_20.add("Раз на тиждень");
@@ -240,7 +240,7 @@ public class Diagnostika3 extends JFrame {
 						"Попередження", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, options,
 						null);
 				if (i_menu == 0) {
-					new Menu("Дієтолог");
+					new Menu("Посадовий профіль");
 					setVisible(false);
 				}
 			}
@@ -251,8 +251,9 @@ public class Diagnostika3 extends JFrame {
 		getContentPane().add(button_1);
 
 		JLabel label = new JLabel("");
-		label.setBounds(569, 0, 425, 565);
-		label.setIcon(new ImageIcon("res/Diagnostika3.jpg"));
+		label.setHorizontalAlignment(SwingConstants.CENTER);
+		label.setBounds(558, 24, 436, 506);
+		label.setIcon(new ImageIcon("res/Diagnostika/mechanic.png"));
 		getContentPane().add(label);
 
 		l_fon = new JLabel("");

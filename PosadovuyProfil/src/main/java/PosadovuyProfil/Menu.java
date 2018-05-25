@@ -9,6 +9,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 
 public class Menu extends JFrame {
 
@@ -25,48 +26,48 @@ public class Menu extends JFrame {
 		setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
 
-		JButton b_Diagnistika = new JButton("Діагностика");
+		JButton b_Diagnistika = new JButton("Оцінка");
 		b_Diagnistika.setFont(new Font("Times New Roman", Font.ITALIC, 30));
-		b_Diagnistika.setForeground(new Color(255, 140, 0));
+		b_Diagnistika.setForeground(Color.MAGENTA);
 		b_Diagnistika.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				new Diagnostika("Дієтолог");
+				new DiagnostuchnePoperedjenna("Посадовий профіль");
 				setVisible(false);
 			}
 		});
 		b_Diagnistika.setBounds(12, 55, 282, 42);
 		getContentPane().add(b_Diagnistika);
 
-		JButton b_Likyvanna = new JButton("Лікування");
+		JButton b_Likyvanna = new JButton("Тайм-менеджмент");
 		b_Likyvanna.setFont(new Font("Times New Roman", Font.ITALIC, 30));
-		b_Likyvanna.setForeground(new Color(255, 140, 0));
+		b_Likyvanna.setForeground(Color.MAGENTA);
 		b_Likyvanna.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				new Likyvanna("Дієтолог");
+				new Likyvanna("Посадовий профіль");
 				setVisible(false);
 			}
 		});
 		b_Likyvanna.setBounds(12, 140, 282, 42);
 		getContentPane().add(b_Likyvanna);
 
-		JButton b_Vegeterianstvo = new JButton("Вегетеріанство");
+		JButton b_Vegeterianstvo = new JButton("Релаксація");
 		b_Vegeterianstvo.setFont(new Font("Times New Roman", Font.ITALIC, 30));
-		b_Vegeterianstvo.setForeground(new Color(255, 140, 0));
+		b_Vegeterianstvo.setForeground(Color.MAGENTA);
 		b_Vegeterianstvo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new Vegeterianstvo("Дієтолог");
+				new Vegeterianstvo("Посадовий профіль");
 				setVisible(false);
 			}
 		});
 		b_Vegeterianstvo.setBounds(12, 235, 282, 42);
 		getContentPane().add(b_Vegeterianstvo);
 
-		JButton b_PerioduRozvutku = new JButton("Періоди розвитку");
+		JButton b_PerioduRozvutku = new JButton("Конфліктність");
 		b_PerioduRozvutku.setFont(new Font("Times New Roman", Font.ITALIC, 30));
-		b_PerioduRozvutku.setForeground(new Color(255, 140, 0));
+		b_PerioduRozvutku.setForeground(Color.MAGENTA);
 		b_PerioduRozvutku.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new PerioduRozvutku("Дієтолог");
+				new PerioduRozvutku("Посадовий профіль");
 				setVisible(false);
 			}
 		});
@@ -75,10 +76,10 @@ public class Menu extends JFrame {
 
 		JButton b_Racion = new JButton("Раціон");
 		b_Racion.setFont(new Font("Times New Roman", Font.ITALIC, 30));
-		b_Racion.setForeground(new Color(255, 140, 0));
+		b_Racion.setForeground(Color.MAGENTA);
 		b_Racion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new Racion("Дієтолог");
+				new Racion("Посадовий профіль");
 				setVisible(false);
 			}
 		});
@@ -87,10 +88,10 @@ public class Menu extends JFrame {
 
 		JButton b_ZvernennaDoLakara = new JButton("Звернення до лікаря");
 		b_ZvernennaDoLakara.setFont(new Font("Times New Roman", Font.ITALIC, 29));
-		b_ZvernennaDoLakara.setForeground(new Color(255, 140, 0));
+		b_ZvernennaDoLakara.setForeground(Color.MAGENTA);
 		b_ZvernennaDoLakara.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new ZvernennaDoLakara("Дієтолог");
+				new ZvernennaDoLakara("Посадовий профіль");
 				setVisible(false);
 			}
 		});
@@ -98,14 +99,16 @@ public class Menu extends JFrame {
 		getContentPane().add(b_ZvernennaDoLakara);
 
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon("res/fon/Menu1.jpg"));
-		label.setBounds(294, 54, 700, 511);
+		label.setVerticalAlignment(SwingConstants.BOTTOM);
+		label.setHorizontalAlignment(SwingConstants.CENTER);
+		label.setIcon(new ImageIcon("res/fon/Menu.png"));
+		label.setBounds(294, 13, 700, 552);
 		getContentPane().add(label);
 
 		l_fon = new JLabel("");
 		l_fon.setForeground(Color.WHITE);
 		l_fon.setIcon(new ImageIcon("res/fon/Reestracia.png"));
-		l_fon.setBounds(-1, 0, 995, 572);
+		l_fon.setBounds(-1, 0, 995, 565);
 		getContentPane().add(l_fon);
 
 		setVisible(true);

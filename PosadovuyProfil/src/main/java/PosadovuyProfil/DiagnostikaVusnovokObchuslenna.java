@@ -217,43 +217,6 @@ public class DiagnostikaVusnovokObchuslenna {
 				i_Error = 1;
 			}
 
-			double d_IMT0 = i_Vaga
-					/ (((i_Zrist / 100) + ((i_Zrist % 100) * 0.01)) * ((i_Zrist / 100) + ((i_Zrist % 100) * 0.01)));
-			double d_IMT = d_IMT0;
-
-			if (d_IMT0 >= 18 && d_IMT0 <= 25) {
-				s_IMT = s_IMT + "Маса тіла у межах норми. Вітаємо !\n\n";
-			}
-			if (d_IMT0 <= 18) {
-				s_IMT = s_IMT + "Недостатня маса тіла. Необхідні термінові заходи.\n\n";
-			}
-			if (d_IMT0 >= 25) {
-				s_IMT = s_IMT + "Надмірна маса тіла. Необхідні термінові заходи.\n\n";
-			}
-
-			double d_IMT1 = i_Reading_4 / (((i_Reading_3 / 100) + ((i_Reading_3 % 100) * 0.01))
-					* ((i_Reading_3 / 100) + ((i_Reading_3 % 100) * 0.01)));
-
-			d_IMT1 = d_IMT1 - 22;
-			d_IMT0 = d_IMT0 - 22;
-
-			if (d_IMT0 < 0) {
-				d_IMT0 = 0 - d_IMT0;
-			}
-			if (d_IMT1 < 0) {
-				d_IMT1 = 0 - d_IMT1;
-			}
-
-			if (d_IMT1 == d_IMT0) {
-				s_Dunamika = s_Dunamika + "Індекс маси Вашого тіла стабільний.\n\n";
-			} else {
-				if (d_IMT1 < d_IMT0) {
-					s_Dunamika = s_Dunamika + "Індекс маси Вашого тіла раніше був кращий. Ви втрачаєте форму.\n\n";
-				} else {
-					s_Dunamika = s_Dunamika + "Індекс маси Вашого тіла став кращим. Ви набераєте форму.\n\n";
-				}
-			}
-
 			int i_PereidannaDunamika = 0;
 
 			if (i_choice_6 != 0 && i_choice_13 == 0 || i_choice_6 != 0 && i_choice_13 == 1) {
@@ -638,7 +601,7 @@ public class DiagnostikaVusnovokObchuslenna {
 			formatter_dani.format(dani);
 			formatter_dani.close();
 
-			new DiagnostikaVusnovokVizyalizacia(s_IMT, d_IMT, s_RekomendaciiZagalni, s_RekomendaciiPerconalni,
+			new DiagnostikaVusnovokVizyalizacia(s_IMT, s_RekomendaciiZagalni, s_RekomendaciiPerconalni,
 					i_Vegeterianstvo, i_Ocinka, i_Error, s_Dunamika);
 
 		} else {
@@ -793,7 +756,7 @@ public class DiagnostikaVusnovokObchuslenna {
 				i_Ocinka = i_Ocinka + 2;
 			}
 
-			new DiagnostikaVusnovokVizyalizacia(s_IMT, d_IMT, s_RekomendaciiZagalni, s_RekomendaciiPerconalni,
+			new DiagnostikaVusnovokVizyalizacia(s_IMT, s_RekomendaciiZagalni, s_RekomendaciiPerconalni,
 					i_Vegeterianstvo, i_Ocinka, i_Error, s_Dunamika);
 
 		}

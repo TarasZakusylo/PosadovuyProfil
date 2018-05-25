@@ -11,13 +11,13 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
-public class PerioduRozvutku extends JFrame {
+public class DiagnostuchnePoperedjenna extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 
 	private JLabel l_fon;
 
-	public PerioduRozvutku(String s) {
+	public DiagnostuchnePoperedjenna(String s) {
 		super(s);
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -26,24 +26,24 @@ public class PerioduRozvutku extends JFrame {
 		setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
 
-		JLabel label = new JLabel("Даний функціонал розробляється");
+		JLabel label = new JLabel("Заборонено використовувати будь-які засоби !");
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setForeground(Color.ORANGE);
 		label.setFont(new Font("Monotype Corsiva", Font.ITALIC, 50));
-		label.setBounds(105, 113, 764, 60);
+		label.setBounds(12, 113, 970, 60);
 		getContentPane().add(label);
 
-		JLabel label_1 = new JLabel("Вибачте за тимчасові незручності");
+		JLabel label_1 = new JLabel("Фіксується час проходження !");
 		label_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_1.setForeground(Color.ORANGE);
 		label_1.setFont(new Font("Monotype Corsiva", Font.ITALIC, 50));
 		label_1.setBounds(105, 205, 764, 60);
 		getContentPane().add(label_1);
 
-		JButton button = new JButton("Меню");
+		JButton button = new JButton("Перейти  до  опитування");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				new Menu("Посадовий профіль");
+				new Diagnostika("Посадовий профіль");
 				setVisible(false);
 			}
 		});

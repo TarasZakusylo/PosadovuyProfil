@@ -45,82 +45,84 @@ public class Diagnostika2 extends JFrame {
 		setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
 
-		l_11 = new JLabel("Скільки овочів та фруктів з’їдаєте за день ?");
+		l_11 = new JLabel("Яке число найменше ?");
 		l_11.setForeground(new Color(255, 0, 255));
 		l_11.setHorizontalAlignment(SwingConstants.CENTER);
 		l_11.setFont(new Font("Times New Roman", Font.ITALIC, 20));
-		l_11.setBounds(2, 58, 462, 36);
+		l_11.setBounds(-2, 84, 428, 36);
 		getContentPane().add(l_11);
 
 		choice_11 = new Choice();
 		choice_11.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_11.setBounds(470, 62, 314, 24);
+		choice_11.setBounds(444, 88, 93, 24);
 		getContentPane().add(choice_11);
-		choice_11.add("Основа мого раціону");
-		choice_11.add("Сумарно десь тарілочку на тиждень");
-		choice_11.add("Майже не їм");
+		choice_11.add("6");
+		choice_11.add("0.7");
+		choice_11.add("0.19");
+		choice_11.add("0.10");
 
-		l_12 = new JLabel("Скільки рідини випиваєте за день ?");
+		l_12 = new JLabel("Продовжте послідовність 73 66 59 52 45 38 ..");
 		l_12.setForeground(new Color(255, 0, 255));
 		l_12.setHorizontalAlignment(SwingConstants.CENTER);
 		l_12.setFont(new Font("Times New Roman", Font.ITALIC, 21));
-		l_12.setBounds(2, 114, 460, 36);
+		l_12.setBounds(-2, 140, 428, 36);
 		getContentPane().add(l_12);
 
 		choice_12 = new Choice();
 		choice_12.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_12.setBounds(468, 118, 314, 24);
+		choice_12.setBounds(442, 144, 95, 24);
 		getContentPane().add(choice_12);
-		choice_12.add("Не менше 2,5 літрів різноманітних напоїв");
-		choice_12.add("Кілька кружок чаю чи кави");
-		choice_12.add("Чашечку кави ранком та чашечку ввечері");
+		choice_12.add("36");
+		choice_12.add("34");
+		choice_12.add("32");
+		choice_12.add("30");
 
-		l_13 = new JLabel("Буває у Вас після прийому їжі важкість ?");
+		l_13 = new JLabel("Виправіть помилку у рядку [4 8 8 4 8 8 4 8 6]");
 		l_13.setForeground(new Color(255, 0, 255));
 		l_13.setHorizontalAlignment(SwingConstants.CENTER);
 		l_13.setFont(new Font("Times New Roman", Font.ITALIC, 21));
-		l_13.setBounds(2, 237, 460, 36);
+		l_13.setBounds(-2, 263, 428, 36);
 		getContentPane().add(l_13);
 
 		choice_13 = new Choice();
 		choice_13.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_13.setBounds(468, 238, 177, 22);
+		choice_13.setBounds(442, 264, 95, 24);
 		getContentPane().add(choice_13);
-		choice_13.add("Ніколи");
-		choice_13.add("Дуже рідко");
-		choice_13.add("Іноді після вечері");
-		choice_13.add("Постійно");
+		choice_13.add("2");
+		choice_13.add("4");
+		choice_13.add("6");
+		choice_13.add("8");
 
-		l_14 = new JLabel("Займаєтесь спортом, додатковими фіз.навантаженнями ?");
+		l_14 = new JLabel("У вересні тривалість дня такаж як і у ..");
 		l_14.setForeground(new Color(255, 0, 255));
 		l_14.setHorizontalAlignment(SwingConstants.CENTER);
-		l_14.setFont(new Font("Times New Roman", Font.ITALIC, 18));
-		l_14.setBounds(2, 175, 470, 36);
+		l_14.setFont(new Font("Times New Roman", Font.ITALIC, 21));
+		l_14.setBounds(-2, 201, 428, 36);
 		getContentPane().add(l_14);
 
 		choice_14 = new Choice();
 		choice_14.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_14.setBounds(468, 176, 177, 22);
+		choice_14.setBounds(442, 202, 95, 24);
 		getContentPane().add(choice_14);
-		choice_14.add("Спорт у мене в крові");
-		choice_14.add("1-2 рази на таждень");
-		choice_14.add("Дуже рідко");
-		choice_14.add("Ніколи, це не для мене");
+		choice_14.add("травні");
+		choice_14.add("квітні");
+		choice_14.add("березні");
+		choice_14.add("лютому");
 
-		l_15 = new JLabel("Як ви ставитесь до вегетаріанства ?");
+		l_15 = new JLabel("А = В; В > C; A > D.                 C > D ?");
 		l_15.setForeground(new Color(255, 0, 255));
 		l_15.setHorizontalAlignment(SwingConstants.CENTER);
 		l_15.setFont(new Font("Times New Roman", Font.ITALIC, 21));
-		l_15.setBounds(2, 308, 460, 36);
+		l_15.setBounds(-2, 334, 428, 36);
 		getContentPane().add(l_15);
 
 		choice_15 = new Choice();
 		choice_15.setFont(new Font("Times New Roman", Font.ITALIC, 15));
-		choice_15.setBounds(468, 309, 175, 28);
+		choice_15.setBounds(442, 335, 95, 24);
 		getContentPane().add(choice_15);
-		choice_15.add("Я вегетеріанець");
-		choice_15.add("Цікавлюсь цим");
-		choice_15.add("Це не для мене");
+		choice_15.add("Так, більше");
+		choice_15.add("Ні, менше");
+		choice_15.add("Невідомо");
 
 		l_putanna2 = new JLabel("11-15/25");
 		l_putanna2.setHorizontalAlignment(SwingConstants.CENTER);
@@ -145,83 +147,91 @@ public class Diagnostika2 extends JFrame {
 				int i_choice_15 = 0;
 
 				switch (s_choice_11) {
-				case "Основа мого раціону": {
+				case "6": {
 					i_choice_11 = 0;
 				}
 					break;
-				case "Сумарно десь тарілочку на тиждень": {
+				case "0.7": {
 					i_choice_11 = 1;
 				}
 					break;
-				case "Майже не їм": {
+				case "0.19": {
+					i_choice_11 = 2;
+				}
+					break;
+				case "0.10": {
 					i_choice_11 = 2;
 				}
 					break;
 				}
 
 				switch (s_choice_12) {
-				case "Не менше 2 літрів різноманітних напоїв": {
+				case "36": {
 					i_choice_12 = 0;
 				}
 					break;
-				case "Кілька кружок чаю чи кави": {
+				case "34": {
 					i_choice_12 = 1;
 				}
 					break;
-				case "Чашечку кави ранком та чашечку ввечері": {
+				case "32": {
+					i_choice_12 = 2;
+				}
+					break;
+				case "30": {
 					i_choice_12 = 2;
 				}
 					break;
 				}
-
+				
 				switch (s_choice_13) {
-				case "Ніколи": {
+				case "2": {
 					i_choice_13 = 0;
 				}
 					break;
-				case "Дуже рідко": {
+				case "4": {
 					i_choice_13 = 1;
 				}
 					break;
-				case "Іноді після вечері": {
+				case "6": {
 					i_choice_13 = 2;
 				}
 					break;
-				case "Постійно": {
+				case "8": {
 					i_choice_13 = 3;
 				}
 					break;
 				}
-			 
+				
 				switch (s_choice_14) {
-				case "Спорт у мене в крові": {
+				case "травні": {
 					i_choice_14 = 0;
 				}
 					break;
-				case "1-2 рази на таждень": {
+				case "квітні": {
 					i_choice_14 = 1;
 				}
 					break;
-				case "Дуже рідко": {
+				case "березні": {
 					i_choice_14 = 2;
 				}
 					break;
-				case "Ніколи, це не для мене": {
+				case "лютому": {
 					i_choice_14 = 3;
 				}
 					break;
 				}
 				
 				switch (s_choice_15) {
-				case "Я вегетеріанець": {
+				case "Так, більше": {
 					i_choice_15 = 0;
 				}
 					break;
-				case "Цікавлюсь цим": {
+				case "Ні, менше": {
 					i_choice_15 = 1;
 				}
 					break;
-				case "Це не для мене": {
+				case "Невідомо": {
 					i_choice_15 = 2;
 				}
 					break;
@@ -246,7 +256,7 @@ public class Diagnostika2 extends JFrame {
 						"Попередження", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, options,
 						null);
 				if (i_menu == 0) {
-					new Menu("Дієтолог");
+					new Menu("Посадовий профіль");
 					setVisible(false);
 				}
 			}
@@ -257,8 +267,9 @@ public class Diagnostika2 extends JFrame {
 		getContentPane().add(button_1);
 		
 		label = new JLabel("");
-		label.setIcon(new ImageIcon("res/Diagnostika2.jpg"));		
-		label.setBounds(645, 13, 349, 539);
+		label.setHorizontalAlignment(SwingConstants.CENTER);
+		label.setIcon(new ImageIcon("res/Diagnostika/chemist.png"));		
+		label.setBounds(558, 24, 436, 506);
 		getContentPane().add(label);
 
 		l_fon = new JLabel("");
